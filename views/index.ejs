@@ -4,26 +4,6 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-
-    <% if(typeof filename == "undefined"){ %>
-      <h1>File path</h1>
-      <% } else {%>  
-        <a href="http://localhost:3001<%= filename %>"><h1>http://localhost:3001<%= filename %></h1></a>
-      <% }%>  
-
-    <form method="POST" enctype="multipart/form-data">
-
-      <div>
-        <label>Nombre</label>
-        <input name="nombre" type="text">
-      </div>
-
-      <div>
-        <input name="image-uploaded"type="file">
-      </div>
-
-      <input type="submit">
-    </form>
-    
+        <a href="/api/image-uploader">API image-uploader</a>
   </body>
 </html>

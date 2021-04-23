@@ -26,4 +26,3 @@ router.get('/image-uploader', apiController.imageUploader);
 router.post('/image-uploader', upload.single('imageUploaded'),apiController.imageUploaderSave);
 
 module.exports = router;
-
