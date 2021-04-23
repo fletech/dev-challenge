@@ -10,9 +10,9 @@ module.exports ={
      },
 
      imageUploaderSave: function (req, res) {
-          return res.status(201).json({
+          return res.status(200).json({
                body: req.body,
-               filename: `/images/uploads/${req.body.imageName}`
+               url: `http://localhost:3000/images/uploads/${req.body.imageName}`
           })
 
           
