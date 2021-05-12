@@ -5,7 +5,7 @@ module.exports = {
   allBlogPosts: (req, res) => {
     Post.find()
       .exec()
-      .then((doc) => res.status(200).json(doc))
+      .then((result) => res.status(200).json(result))
       .catch((err) => res.status(500).json({ error: err }));
   },
   oneBlogPosts: (req, res) => {
