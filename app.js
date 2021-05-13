@@ -6,9 +6,17 @@ let logger = require("morgan");
 let cors = require("cors");
 const mongoose = require("mongoose");
 
-mongoose.connect(
-  `mongodb+srv://facundo-portfolio:Artaud1973@fletech.o6psu.mongodb.net/portfolio?retryWrites=true&w=majority`
-);
+mongoose.Promise = global.Promise;
+
+mongoose
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+  })
+  .then(() => console.log("Connected to database."))
+  .catch(() => {
+    console.log("Cannot connect to database. Exiting.");
+    process.exit();
+  });
 
 let indexRouter = require("./routes/index");
 let apiRouter = require("./routes/api");

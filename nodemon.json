@@ -1,5 +1,5 @@
 {
   "env": {
-    "MONGO_ATLAS_PW": "Artaud1973"
+    "MONGODB_URI": "mongodb+srv://facundo-portfolio:Artaud1973@fletech.o6psu.mongodb.net/portfolio?retryWrites=true w=majority"
   }
 }
