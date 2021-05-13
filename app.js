@@ -7,7 +7,7 @@ let cors = require("cors");
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  `mongodb+srv://facundo-portfolio:${process.env.MONGO_ATLAS_PW}@fletech.o6psu.mongodb.net/portfolio?retryWrites=true&w=majority`
+  `mongodb+srv://facundo-portfolio:Artaud1973@fletech.o6psu.mongodb.net/portfolio?retryWrites=true&w=majority`
 );
 
 let indexRouter = require("./routes/index");
